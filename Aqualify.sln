@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aqualify", "Aqualify.csproj", "{DB3C9318-8D94-4CCB-8EEF-8DDC9CF1741C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB3C9318-8D94-4CCB-8EEF-8DDC9CF1741C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3C9318-8D94-4CCB-8EEF-8DDC9CF1741C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3C9318-8D94-4CCB-8EEF-8DDC9CF1741C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3C9318-8D94-4CCB-8EEF-8DDC9CF1741C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFC9EC85-0F8C-4322-A891-3773333E9636}
+	EndGlobalSection
+EndGlobal

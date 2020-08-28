@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+
+    <link href="Style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+</head>
+<body>
+     <h1>Notes</h1>
+
+        <button id="logout-btn" class="logout-btn">Logout</button>
+    <br>    
+    <br>    
+
+
+    <h3>Form<h3>
+        <input type="text" id="Notes-Title" class="input-field" placeholder="Notes">
+        <input type="text" id="Content" class="input-field" placeholder="Content">
+        <input type="text" id="Deadline" class="input-field" placeholder="Deadline">
+        <button onclick = "writeData()">Submit</button>
+        <p id = "data"></p> 
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+
+    <script>
+        var firebaseConfig =
+        {
+            apiKey: "AIzaSyCBZsC-XZngkhIH52-0iIRwXnJoijkzTn8",
+            authDomain: "fir-75021.firebaseapp.com",
+            databaseURL: "https://fir-75021.firebaseio.com",
+            projectId: "fir-75021",
+            storageBucket: "fir-75021.appspot.com",
+            messagingSenderId: "808708678066",
+            appId: "1:808708678066:web:509ea9f9c8b141118304ab"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        db.setting({ timestampsInSnapshots: true})
+    </script>
+
+    <script type="text/javascript" src="Firebase.js"></script>
+    <script type="text/javascript" src="Form.js"></script>
+
+</body>
+</html>

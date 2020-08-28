@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Css/Style.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+</head>
+<body>
+    <div class="aqua">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="email" id="LEmail" class="input-field" placeholder="Email" required>
+                <input type="password" minlength="6" id="LPassword" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" id="login-btn" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" id="RUsername" class="input-field" placeholder="Username" required>
+                <input type="email" id="REmail" class="input-field" placeholder="Email" required>
+                <input type="password" id="RPassword" minlength="6" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" id="register-btn" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+
+    <script>
+        var firebaseConfig =
+        {
+            apiKey: "AIzaSyCBZsC-XZngkhIH52-0iIRwXnJoijkzTn8",
+            authDomain: "fir-75021.firebaseapp.com",
+            databaseURL: "https://fir-75021.firebaseio.com",
+            projectId: "fir-75021",
+            storageBucket: "fir-75021.appspot.com",
+            messagingSenderId: "808708678066",
+            appId: "1:808708678066:web:509ea9f9c8b141118304ab"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        db.setting({ timestampsInSnapshots: true})
+    </script>
+
+    <script type="text/javascript" src="Js/Firebase.js"></script>
+    <script type="text/javascript" src="Js/Form.js"></script>
+
+</body>
+</html>
