@@ -1,2 +1,2 @@
 # Aqualify-WebDev
-This the web app that we created for out mobile application, Aqualify. 
+This is the web app that we have created for our mobile application, Aqualify. 
